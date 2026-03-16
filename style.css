@@ -24,3 +24,26 @@ body {
     grid-template-rows: 80px 1fr 60px;
     
 }
+
+header { grid-area: header;
+    background: var(--dark); color: white;
+    display: flex; align-items: center;
+    padding: 0 20px; 
+}
+
+nav { grid-area: sidebar;
+    background: #f1f5f9; padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+main { grid-area: content; 
+    padding: 40px;
+    background: var(--light);
+}
+
+footer { grid-area: footer; 
+    background: var(--dark); 
+    color: white; display: flex;
+    align-items: center; 
+    justify-content: center;
+}
