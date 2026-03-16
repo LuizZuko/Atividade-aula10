@@ -47,3 +47,42 @@ footer { grid-area: footer;
     align-items: center; 
     justify-content: center;
 }
+
+nav ul { 
+    list-style: none;
+}
+
+nav li {
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 8px;
+}
+
+nav li::before {
+    content: "◈";
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+nav li:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(10px); 
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    width: fit-content;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
